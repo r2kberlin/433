@@ -26,3 +26,4 @@ else //...ansonsten...
 mySwitch.send(1234, 24); // Der 433mhz Sender versendet die Dezimalzahl „1234“
 } //Programmabschnitt des else-Befehls schließen.
 } //Mit dieser letzten Klammer wird der Loop-Teil geschlossen.
+

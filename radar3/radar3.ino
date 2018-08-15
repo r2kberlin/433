@@ -11,7 +11,7 @@ int val = 0;
  
 void setup() {
   Serial.begin(9600);
-  mySwitch.enableTransmit(7) ;// Pin7Sender
+  mySwitch.enableTransmit(7) ;
   // pinMode(RADAR_SENSOR, INPUT); //Der Pin mit dem Taster (Pin 7) ist jetzt ein Eingang.
   pinMode (RADAR_SENSOR, INPUT);
   pinMode (RadarLED, OUTPUT);
@@ -23,9 +23,9 @@ void setup() {
 }
  
 void loop() {
-//  int value = digitalRead(RADAR_SENSOR);
-//  digitalWrite(RadarLED, value > 0 ? HIGH : LOW);
-//  delay(100);
+  int value = digitalRead(RADAR_SENSOR);
+  digitalWrite(RadarLED, value > 0 ? HIGH : LOW);
+  delay(100);
 
   tasterstatus=digitalRead(RADAR_SENSOR); //Hier wird der Pin7 ausgelesen (Befehl:digitalRead). Das Ergebnis wird unter der Variable „tasterstatus“ mit dem Wert „HIGH“ für 5Volt oder „LOW“ für 0Volt gespeichert.
 
